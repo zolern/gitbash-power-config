@@ -1,0 +1,6 @@
+# Remove screen flickers because of visible bell
+# none, visible or audible
+set bell-style none
+
+# Press Esc to clear line (like Ctrl-U)
+Escape: unix-line-discard
