@@ -1,0 +1,13 @@
+# none, visible or audible
+set bell-style none
+
+# Esc clears whole line (Ctrl-E - goto ent of line, Ctrl-U - delete to the begining of line)
+Escape: "\C-e\C-u"
+
+# Ctrl-Left Arrow, Ctrl-Shift-Left Arrow move one word left
+"\e[1;6D": backward-word
+"\e[1;5D": backward-word
+
+# Ctrl-Right Arrow, Ctrl-Shift-Right Arrow move one word left
+"\e[1;6C": forward-word 
+"\e[1;5C": forward-word

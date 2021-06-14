@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# add ~/.bash_profile if needed for executing ~/.bashrc
+test -f ~/.bash_prompt && . ~/.bash_prompt
 
-# alias d='d.cmd' # implemented in its own bash file
+# alias d='d.cmd' # implemented in its own function (see below)
 alias df='df.cmd'
 alias ef='ef.cmd'
 alias fe='fe.cmd'
@@ -15,6 +15,7 @@ alias nc='nc.cmd'
 alias nr='nr.cmd'
 alias cls='clear && printf "\e[3J"'
 alias dir='ls -algosAH --group-directories-first'
+alias code='code-insiders'
 
 # delete directory alias
 function rd {
