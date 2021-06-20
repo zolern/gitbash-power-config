@@ -15,7 +15,7 @@ alias nc='nc.cmd'
 alias nr='nr.cmd'
 alias cls='clear && printf "\e[3J"'
 alias dir='ls -algosAH --group-directories-first'
-alias code='code-insiders'
+alias code='code.cmd'
 
 # delete directory alias
 function rd {
