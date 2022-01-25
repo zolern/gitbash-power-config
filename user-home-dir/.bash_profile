@@ -3,6 +3,7 @@
 test -f ~/.bash_prompt && . ~/.bash_prompt
 
 # alias d='d.cmd' # implemented in its own function (see below)
+alias cd..='cd ..'
 alias df='df.cmd'
 alias ef='ef.cmd'
 alias fe='fe.cmd'
@@ -16,6 +17,12 @@ alias nr='nr.cmd'
 alias cls='clear && printf "\e[3J"'
 alias dir='ls -algosAH --group-directories-first'
 alias code='code.cmd'
+alias code.='code .'
+alias ngtc='ng test --code-coverage'
+alias ngt='ng test'
+alias ngs='ng serve'
+alias ngb='ng build'
+alias ngc='rd .cache/ && rd dist/'
 alias ren='mv'
 
 # delete directory alias
