@@ -13,3 +13,11 @@ Escape: "\C-e\C-u"
 "\e[1;6C": forward-word 
 "\e[1;5C": forward-word
 "\e[1;2C": forward-word
+
+# Update Home / End (also Ctrl+Home/End, Shift+Home/End)
+"\e[1~": beginning-of-line      # Home Key
+"\e[4~": end-of-line            # End Key
+"\e[1;5~": beginning-of-line      # Ctrl-Home Key
+"\e[4;5~": end-of-line            # Ctrl-End Key
+"\e[1;2~": beginning-of-line      # Shift-Home Key
+"\e[4;2~": end-of-line            # Shift-End Key
