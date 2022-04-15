@@ -24,6 +24,7 @@ alias ngs='ng serve'
 alias ngb='ng build'
 alias ngc='rd .cache/ && rd dist/'
 alias ren='mv'
+alias md='mkdir'
 
 # delete directory alias
 function rd {
@@ -32,11 +33,6 @@ function rd {
     else
         echo "No dir to delete"
     fi
-}
-
-# create directory alias
-function md {
-    mkdir "$1"
 }
 
 # delete file alias
