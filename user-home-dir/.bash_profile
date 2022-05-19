@@ -13,6 +13,7 @@ alias msb='msb.cmd'
 alias n='n.cmd'
 alias nc='nc.cmd'
 alias nr='nr.cmd'
+alias bams='bams.cmd'
 #d.cmd is wrapped by function, see below
 
 alias code='code.cmd'
