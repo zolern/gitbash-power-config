@@ -10,18 +10,21 @@ alias g='g.cmd'
 alias idf='idf.cmd'
 alias kb='kb.cmd'
 alias msb='msb.cmd'
-alias n='n.cmd'
+#alias n='n.cmd' - wrapped by function, see below
 alias nc='nc.cmd'
 alias nr='nr.cmd'
+alias np='n p'
+alias nv='nv.cmd'
 alias bams='bams.cmd'
-#d.cmd is wrapped by function, see below
+#alias d='d.cmd' - wrapped by function, see below
 
 alias code='code.cmd'
 alias code.='code .'
-alias ngtc='ng test --code-coverage'
-alias ngt='ng test'
-alias ngs='ng serve'
-alias ngb='ng build'
+alias ng='npx ng'
+alias ngtc='npx ng test --code-coverage'
+alias ngt='npx ng test'
+alias ngs='npx ng serve'
+alias ngb='npx ng build'
 alias ngc='rd .cache/ && rd dist/'
 alias ngr='rd node_modules && ngc'
 alias ngi='ngr && npm install'
@@ -30,7 +33,8 @@ alias ngri='ngr && del package-lock.json && npm install -f'
 #some commands from Windows Cmd
 alias cd..='cd ..'
 alias type='cat'
-alias cls='clear && printf "\e[3J"'
+alias cr='printf "\e[3J" && printf "\e[?25h"'
+alias cls='clear'
 alias dir='ls -algosAH --group-directories-first'
 alias ren='mv'
 alias md='mkdir'
@@ -47,7 +51,7 @@ function rd {
 # 'del' alias
 function del {
     if [ -n "$1" ]; then
-        rm "$1"
+        rm -f "$1"
     else
         echo "No file to delete"
     fi
@@ -62,5 +66,17 @@ function d() {
 		cd "$linuxdir"
 	else
 		echo "$DOUTPUT"
+	fi
+}
+
+# bash wrapper for n.cmd
+function n() {
+	if [[ ${1,,} = "env" ]]; then
+        n.cmd "$@"
+		if [ -n "$2" ]; then
+			NODE_ENV=$(n.cmd "$@" -p)
+		fi
+	else
+		n.cmd "$@"
 	fi
 }
