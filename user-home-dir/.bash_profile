@@ -10,13 +10,13 @@ alias g='g.cmd'
 alias idf='idf.cmd'
 alias kb='kb.cmd'
 alias msb='msb.cmd'
-#alias n='n.cmd' - wrapped by function, see below
 alias nc='nc.cmd'
 alias nr='nr.cmd'
 alias np='n p'
 alias nv='nv.cmd'
 alias bams='bams.cmd'
 #alias d='d.cmd' - wrapped by function, see below
+#alias n='n.cmd' - wrapped by function, see below
 
 alias code='code.cmd'
 alias code.='code .'
