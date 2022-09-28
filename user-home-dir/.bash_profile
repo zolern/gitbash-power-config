@@ -18,8 +18,13 @@ alias bams='bams.cmd'
 #alias d='d.cmd' - wrapped by function, see below
 #alias n='n.cmd' - wrapped by function, see below
 
+# Visual Studio Code helpers
 alias code='code.cmd'
 alias code.='code .'
+alias c='code'
+alias c.='code .'
+
+# ng (Angular) helpers
 alias ng='npx ng'
 alias ngtc='npx ng test --code-coverage'
 alias ngt='npx ng test'
@@ -30,7 +35,7 @@ alias ngr='rd node_modules && ngc'
 alias ngi='ngr && npm install'
 alias ngri='ngr && del package-lock.json && npm install -f'
 
-#some commands from Windows Cmd
+# some commands from Windows Cmd
 alias cd..='cd ..'
 alias type='cat'
 alias cr='printf "\e[3J" && printf "\e[?25h"'
@@ -38,6 +43,9 @@ alias cls='clear'
 alias dir='ls -algosAH --group-directories-first'
 alias ren='mv'
 alias md='mkdir'
+alias edit='start notepad++'
+alias e='edit'
+alias es='emsdk'
 
 # 'rd' alias
 function rd {
