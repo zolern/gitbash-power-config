@@ -15,6 +15,7 @@ alias nr='nr.cmd'
 alias np='n p'
 alias nv='nv.cmd'
 alias bams='bams.cmd'
+alias snim='snim.cmd'
 #alias d='d.cmd' - wrapped by function, see below
 #alias n='n.cmd' - wrapped by function, see below
 
