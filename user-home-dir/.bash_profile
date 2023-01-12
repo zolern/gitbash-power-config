@@ -35,6 +35,30 @@ alias ngc='rd .cache/ && rd dist/'
 alias ngr='rd node_modules && ngc'
 alias ngi='ngr && npm install'
 alias ngri='ngr && del package-lock.json && npm install -f'
+alias ng?='ngHelp'
+
+function ngHelp {
+	echo ""
+	echo "Angular command & routine shortcuts"
+	echo ""
+	echo "ng shortcuts:"
+	echo "------------------------------------"
+	echo ""
+	echo -e "ngtc\t ng test --code-coverage"
+	echo -e "ngt\t ng test"
+	echo -e "ngs\t ng serve"
+	echo -e "ngb\t ng build"
+	echo ""
+	echo ""
+	echo "Clean-up and reinstall shortcuts:"
+	echo "------------------------------------"
+	echo ""
+	echo -e "ngc\t clean-up cache and dist folders"
+	echo -e "ngr\t reset: remove node_modules, .cache and dist folders"
+	echo -e "ngi\t reset and npm install"
+	echo -e "ngri\t reset, remove package-lock.json and npm install"
+	echo ""
+}
 
 # some commands from Windows Cmd
 alias cd..='cd ..'
