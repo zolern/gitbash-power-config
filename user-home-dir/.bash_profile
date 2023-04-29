@@ -16,6 +16,7 @@ alias np='np.cmd'
 alias nv='nv.cmd'
 alias bams='bams.cmd'
 alias snim='snim.cmd'
+alias mingw='mingw.cmd'
 #alias d='d.cmd' - wrapped by function, see below
 #alias n='n.cmd' - wrapped by function, see below
 
@@ -34,7 +35,7 @@ alias ngb='npx ng build'
 alias ngc='rd .cache/ && rd dist/'
 alias ngr='rd node_modules && ngc'
 alias ngi='ngr && npm install'
-alias ngri='ngr && del package-lock.json && npm install -f'
+alias ngri='ngr && del package-lock.json && npm install'
 alias ng?='ngHelp'
 
 function ngHelp {
